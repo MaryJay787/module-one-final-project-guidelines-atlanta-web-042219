@@ -10,12 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 3) do
+ActiveRecord::Schema.define(version: 4) do
 
   create_table "allegiances", force: :cascade do |t|
     t.integer "house_id"
     t.integer "member_id"
-    t.string  "oath"
     t.boolean "oath_status"
   end
 
